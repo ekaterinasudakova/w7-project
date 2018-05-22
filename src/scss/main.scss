@@ -8,13 +8,18 @@ TABLE OF CONTENTS:
 
 0. Reset
 1. Main Layout
-2. Content
+2. HP
+3. About
+4. Products
+5. Contact
+
 
 ==============================================
 */
 
 /* 0. Reset ================================= */
 @import 'reset';
+@import 'variables';
 
 
 /* 1. Main Layout ================================= */
@@ -24,7 +29,151 @@ TABLE OF CONTENTS:
 }
 
 
+/* 2. HP ================================= */
+	.wrapper{
+		@include centering-mobile
+		margin: 0 auto;
+		max-width: 90%;
+		flex-direction: column;
+		align-content: center;
+	}
 
+	.logo-container{
+		@include centering-mobile
+		.logo{
+			position: relative;
+			width: 40%;
+			height: 40%;
+		}
+	}
 
+	// NAVIGATION
+	.menu-item{
+		a{
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: $primary-font;
+			font-size: 2.7em;
+			color: $primary-color;
+	
+			&:hover{
+				color: $secondary-color;
+			}
+		}
+	}
+	
+	.about{
+		a{
+			@include centering-mobile
+			padding: 1em 0;
+		}
+	}
+	.products{
+		a{
+			@include centering-mobile
+			padding: 1em 0;
+		}
+	}
+	.contact{
+		a{
+			@include centering-mobile
+			padding: 1em 0;
+		}
+	}
+//you can make ITT appear and then transition it to them expanding and the rest of the word appears
+	.social{
+		cursor: pointer;
+		display:flex;
+		justify-content: space-around;
+		margin-top: 4em;
+		margin-bottom: 2em;
+		font-family: $secondary-font;
+		font-size: 1em;
+		text-transform: uppercase;
 
-/* 2. Content ================================= */
+		li{
+			&:hover{
+				color: $tritary-color;
+			}
+		}
+	}
+	/* 3. About ================================= */
+	.home-link-thumb{
+		@include centering-mobile
+		img{
+			position: relative;
+			width: 10em;
+			height: 10em;
+		}
+	}
+	.about-link-thumb{
+		@include centering-mobile
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $primary-color;
+		font-family: $primary-font;
+		font-size: 1.5em;
+		background-color: $tritary-color;
+		margin: 1em 0;
+		padding: 1.5em;
+	}
+	.products-link-thumb{
+		@include centering-mobile
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $primary-color;
+		font-family: $primary-font;
+		font-size: 1em;
+		background-color: $tritary-color;
+		margin: 1em 0;
+		padding: 1.5em;
+	}
+	.contact-link-thumb{
+		@include centering-mobile
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $primary-color;
+		font-family: $primary-font;
+		font-size: .7em;
+		background-color: $tritary-color;
+		margin: 1em 0;
+		padding: 1.5em;
+	}
+	.left-imgs{
+		.about-img-1,
+		.about-img-2,
+		.about-img-3{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.right-info{
+		.about-h1{
+			@include centering-mobile
+			text-transform: uppercase;
+			color: $primary-color;
+			font-family: $primary-font;
+			font-size: 5.5em;
+			margin-top: .7em;
+			margin-bottom: .3em;
+			border-bottom: 1px solid black;
+		}
+		.about-main-p{
+			@include centering-mobile
+			font-family: $secondary-font;
+			font-size: 1em;
+			letter-spacing: .04em;
+		}
+	}
+	.latest-greatest{
+		@include centering-mobile
+		.about-h2{
+			@include centering-mobile
+			font-family: $tritary-font;
+			font-size: 2.8em;
+			text-transform: lowercase;
+			margin-top: 1em;
+			margin-bottom: .3em;
+			border-bottom: 1px solid black;
+		}
+	}

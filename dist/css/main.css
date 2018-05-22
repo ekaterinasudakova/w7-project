@@ -8,7 +8,11 @@ TABLE OF CONTENTS:
 
 0. Reset
 1. Main Layout
-2. Content
+2. HP
+3. About
+4. Products
+5. Contact
+
 
 ==============================================
 */
@@ -67,11 +71,170 @@ table {
 	border-spacing: 0;
 }
 
+/*VARIABLES*/
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
 }
 
-/* 2. Content ================================= */
+/* 2. HP ================================= */
+.wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 90%;
+	flex-direction: column;
+	align-content: center;
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+}
+
+.logo-container .logo {
+	position: relative;
+	width: 40%;
+	height: 40%;
+}
+
+.menu-item a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Righteous", cursive;
+	font-size: 2.7em;
+	color: black;
+}
+
+.menu-item a:hover {
+	color: red;
+}
+
+.about a {
+	display: flex;
+	justify-content: center;
+	padding: 1em 0;
+}
+
+.products a {
+	display: flex;
+	justify-content: center;
+	padding: 1em 0;
+}
+
+.contact a {
+	display: flex;
+	justify-content: center;
+	padding: 1em 0;
+}
+
+.social {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 4em;
+	margin-bottom: 2em;
+	font-family: "Raleway", sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.social li:hover {
+	color: firebrick;
+}
+
+/* 3. About ================================= */
+.home-link-thumb {
+	display: flex;
+	justify-content: center;
+}
+
+.home-link-thumb img {
+	position: relative;
+	width: 10em;
+	height: 10em;
+}
+
+.about-link-thumb {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-family: "Righteous", cursive;
+	font-size: 1.5em;
+	background-color: firebrick;
+	margin: 1em 0;
+	padding: 1.5em;
+}
+
+.products-link-thumb {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-family: "Righteous", cursive;
+	font-size: 1em;
+	background-color: firebrick;
+	margin: 1em 0;
+	padding: 1.5em;
+}
+
+.contact-link-thumb {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-family: "Righteous", cursive;
+	font-size: .7em;
+	background-color: firebrick;
+	margin: 1em 0;
+	padding: 1.5em;
+}
+
+.left-imgs .about-img-1,
+.left-imgs .about-img-2,
+.left-imgs .about-img-3 {
+	width: 100%;
+	height: 100%;
+}
+
+.right-info .about-h1 {
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	color: black;
+	font-family: "Righteous", cursive;
+	font-size: 5.5em;
+	margin-top: .7em;
+	margin-bottom: .3em;
+	border-bottom: 1px solid black;
+}
+
+.right-info .about-main-p {
+	display: flex;
+	justify-content: center;
+	font-family: "Raleway", sans-serif;
+	font-size: 1em;
+	letter-spacing: .04em;
+}
+
+.latest-greatest {
+	display: flex;
+	justify-content: center;
+}
+
+.latest-greatest .about-h2 {
+	display: flex;
+	justify-content: center;
+	font-family: "Oswald", sans-serif;
+	font-size: 2.8em;
+	text-transform: lowercase;
+	margin-top: 1em;
+	margin-bottom: .3em;
+	border-bottom: 1px solid black;
+}
 
 /*# sourceMappingURL=main.css.map */

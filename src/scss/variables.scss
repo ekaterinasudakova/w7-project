@@ -1,0 +1,34 @@
+/*VARIABLES*/
+$tablet-breakpoint: 640px;
+$desktop-breakpoint: 940px;
+
+$primary-font: 'Righteous', cursive;
+$secondary-font: 'Raleway', sans-serif;
+$tritary-font: 'Oswald', sans-serif;
+
+$primary-color: black;
+$secondary-color: red;
+$tritary-color: firebrick;
+
+@mixin centering-mobile{
+    display: flex;
+    justify-content: center;
+}
+
+
+// /*VIEWPORTS*/
+// @mixin bp-mobile{
+// 	@media only screen and (min-width: $mobile-breakpoint){
+// 		@content;
+// 	}
+// }
+// @mixin bp-tablet{
+// 	@media only screen and (min-width:$tablet-breakpoint){
+// 		@content;
+// 	}
+// }
+// @mixin bp-desktop{
+// 	@media only screen and (min-width:$desktop-breakpoint){
+// 		@content;
+// 	}
+// }
