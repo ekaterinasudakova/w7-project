@@ -177,3 +177,138 @@ TABLE OF CONTENTS:
 			border-bottom: 1px solid black;
 		}
 	}
+		/* 4. Products ================================= */
+		
+		.content-wrapper{
+			display: flex;
+			flex-direction: column;
+
+			.product1,
+			.product2,
+			.product3,
+			.product4,
+			.product5,
+			.product6,
+			.product7,
+			.product8,
+			.product9{
+				@include gallery-info-styles				
+			}
+
+			.products-img1,
+			.products-img2,
+			.products-img3,
+			.products-img4,
+			.products-img5,
+			.products-img6,
+			.products-img7,
+			.products-img8,
+			.products-img9{
+				@include product-mobile-styles
+			}
+		}
+
+/* 4. Contact ================================= */
+
+.contact-info{
+	background-color: orange;
+	padding: 1em;
+	font-family: $secondary-font;
+	line-height: 1.5;
+	margin: 2em 0;
+
+	h1{
+		font-family: $tritary-font;
+		font-size: 3.5em;
+		text-align: center;
+		padding: .2em;
+	}
+	p{
+		padding-bottom: 1em;
+	}
+	:last-child{
+		padding-bottom: 1.4em;
+	}
+}
+
+.contact-aside{
+	background-color: lightseagreen;
+	padding: 1em;
+	font-family: $secondary-font;
+	line-height:  1.5;
+	margin-bottom: 2em 0;
+
+	h2{
+		font-family: $tritary-font;
+		font-size: 3.5em;
+		padding: .2em;
+		padding-bottom: .4em;
+		text-align: center;
+	}
+
+	p{
+		padding-bottom: 1em;
+	}
+
+	:last-child{
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		color: $primary-color;
+
+		a{
+			padding-top: 1em;
+			text-align: center;
+			margin-bottom: 2em;
+			letter-spacing: .35em;
+			text-transform: uppercase;
+			
+			&:hover{
+				color: $tritary-color;
+			}
+		}
+
+	}
+}
+
+.contact-social{
+	background-color: pink;
+	padding: 1em;
+	font-family: $secondary-font;
+	line-height: 1.5;
+	margin: 2em 0;
+
+	h3{
+		font-family: $tritary-font;
+		font-size: 3.5em;
+		padding: .2em;
+		text-align: center;
+		margin-bottom: .3em;
+	}
+
+	li{
+		.social1,
+		.social2,
+		.social3{
+			display: flex;
+		}	
+		
+		h4{
+			font-style: italic;
+			position: relative;
+			top: 1em;
+			padding-left: 2em;
+		}
+
+		p{
+			padding-top: .7em;
+			text-align: left;
+			font-size: 1em;
+
+			&:last-child{
+				margin-bottom: 2em;
+			}
+		}
+	}
+	
+}

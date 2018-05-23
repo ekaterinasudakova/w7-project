@@ -15,6 +15,69 @@ $tritary-color: firebrick;
     justify-content: center;
 }
 
+@mixin product-mobile-styles{
+    width: 100%;
+	height: 100%;
+}
+
+@mixin tint{
+    .tint {
+        position: relative;
+        float: left;
+        cursor: pointer;
+      }
+      
+    .tint:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: none;
+        -moz-transition: background .3s linear;
+        -webkit-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        transition: background .3s linear;
+      }
+      
+    .tint:hover:before {
+        background: rgba(0, 0, 0, 0.2);
+      }
+}
+
+@mixin gallery-info-styles{
+    display: flex;
+				flex-direction: column;
+				h2{
+					font-family: $secondary-font;
+					font-size: 3.5em;
+					text-transform: uppercase;
+
+					margin: 1em;
+
+				}
+				p{
+					font-family: $secondary-font;
+					font-size: 1.2em;
+					text-align: center;
+					padding: 2em 0;
+					border-bottom: 1px solid black;
+					border-top: 1px solid black;
+
+				}
+				h3{
+					font-family: $secondary-font;
+					font-size: 2em;
+					text-align:center;
+					padding: 1em 0;
+					.currency{
+						font-size: .35em;
+						text-transform: uppercase;
+                    }
+                }
+}
 
 // /*VIEWPORTS*/
 // @mixin bp-mobile{
