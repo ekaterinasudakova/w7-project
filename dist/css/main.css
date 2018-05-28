@@ -77,7 +77,6 @@ table {
 	box-sizing: border-box;
 }
 
-/* 2. HP ================================= */
 .wrapper {
 	display: flex;
 	justify-content: center;
@@ -87,6 +86,7 @@ table {
 	align-content: center;
 }
 
+/* 2. HP ================================= */
 .logo-container {
 	display: flex;
 	justify-content: center;
@@ -139,8 +139,51 @@ table {
 	text-transform: uppercase;
 }
 
-.social li:hover {
+.social li a {
+	width: 100%;
+	height: 100%;
+	padding: 2em 4em;
+	text-decoration: none;
+	color: black;
+}
+
+.social li a:hover {
 	color: firebrick;
+}
+
+@media screen and (min-width: 640px) {
+	.logo-container {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	.logo-container .logo {
+		height: 50%;
+		width: 50%;
+		position: absolute;
+		top: 22%;
+		right: 22%;
+	}
+	.about {
+		transform: rotate(90deg);
+		position: absolute;
+		right: 85%;
+		top: 40%;
+	}
+	.products {
+		position: absolute;
+		top: 80%;
+		right: 35%;
+	}
+	.contact {
+		transform: rotate(-90deg);
+		position: absolute;
+		left: 85%;
+		top: 40%;
+	}
+	.social {
+		margin-top: 2.5em;
+	}
 }
 
 /* 3. About ================================= */
@@ -237,6 +280,106 @@ table {
 	border-bottom: 1px solid black;
 }
 
+@media screen and (min-width: 640px) {
+	.home-link-thumb img {
+		position: absolute;
+		top: 2em;
+		left: 1em;
+		width: 10%;
+		height: 15%;
+	}
+	.ACP {
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		left: 3em;
+		top: .5em;
+	}
+	.ACP li .about-link-thumb {
+		background-color: transparent;
+	}
+	.ACP li .about-link-thumb .about-link-img {
+		height: 3em;
+		width: auto;
+		object-fit: contain;
+	}
+	.ACP li .products-link-thumb {
+		background-color: transparent;
+		font-size: 1.5em;
+	}
+	.ACP li .products-link-thumb .products-link-img {
+		height: 3em;
+		width: auto;
+		object-fit: contain;
+	}
+	.ACP li .contact-link-thumb {
+		background-color: transparent;
+		font-size: 1.5em;
+	}
+	.ACP li .contact-link-thumb .contact-link-img {
+		height: 3em;
+		width: auto;
+		object-fit: contain;
+	}
+	.about-hero {
+		background-image: url(../../dist/img/about-hero.jpg);
+	}
+	.hero {
+		position: relative;
+		top: -2em;
+		height: 550px;
+		background-size: auto 500px;
+		background-position: 10% 80%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	.left-imgs {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 90%;
+		left: 10%;
+	}
+	.left-imgs .about-img-1,
+	.left-imgs .about-img-2,
+	.left-imgs .about-img-3 {
+		width: 45%;
+		height: 50%;
+		z-index: 3;
+		margin-bottom: 4em;
+	}
+	.left-imgs .about-img-3 {
+		position: absolute;
+		left: 50%;
+		top: 40%;
+	}
+	.right-info {
+		margin-right: 4em;
+		position: absolute;
+		top: 90%;
+		left: 60%;
+	}
+	.right-info .about-main-p {
+		position: relative;
+		top: 2em;
+		line-height: 1.5;
+	}
+	.right-info .about-main-p:last-child {
+		padding-top: .7em;
+	}
+	.latest-greatest {
+		position: absolute;
+		top: 260%;
+		left: 35%;
+	}
+	.latest-greatest .about-h2 {
+		text-transform: uppercase;
+		letter-spacing: .07em;
+		padding-bottom: .3em;
+	}
+}
+
 /* 4. Products ================================= */
 .content-wrapper {
 	display: flex;
@@ -268,6 +411,7 @@ table {
 	font-family: "Raleway", sans-serif;
 	font-size: 3.5em;
 	text-transform: uppercase;
+	text-align: center;
 	margin: 1em;
 }
 
@@ -327,6 +471,111 @@ table {
 .content-wrapper .products-img9 {
 	width: 100%;
 	height: 100%;
+}
+
+@media screen and (min-width: 640px) {
+	.content-wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.content-wrapper .product1,
+	.content-wrapper .product2,
+	.content-wrapper .product3,
+	.content-wrapper .product4,
+	.content-wrapper .product5,
+	.content-wrapper .product6,
+	.content-wrapper .product7,
+	.content-wrapper .product8,
+	.content-wrapper .product9 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.content-wrapper .product1 h2,
+	.content-wrapper .product2 h2,
+	.content-wrapper .product3 h2,
+	.content-wrapper .product4 h2,
+	.content-wrapper .product5 h2,
+	.content-wrapper .product6 h2,
+	.content-wrapper .product7 h2,
+	.content-wrapper .product8 h2,
+	.content-wrapper .product9 h2 {
+		font-family: "Raleway", sans-serif;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		text-align: center;
+		padding: .5em 0;
+		margin: .5em;
+	}
+	.content-wrapper .product1 p,
+	.content-wrapper .product2 p,
+	.content-wrapper .product3 p,
+	.content-wrapper .product4 p,
+	.content-wrapper .product5 p,
+	.content-wrapper .product6 p,
+	.content-wrapper .product7 p,
+	.content-wrapper .product8 p,
+	.content-wrapper .product9 p {
+		font-family: "Raleway", sans-serif;
+		font-size: .8em;
+		text-align: center;
+		padding: 1em 0;
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
+	}
+	.content-wrapper .product1 h3,
+	.content-wrapper .product2 h3,
+	.content-wrapper .product3 h3,
+	.content-wrapper .product4 h3,
+	.content-wrapper .product5 h3,
+	.content-wrapper .product6 h3,
+	.content-wrapper .product7 h3,
+	.content-wrapper .product8 h3,
+	.content-wrapper .product9 h3 {
+		font-family: "Raleway", sans-serif;
+		font-size: 1.5em;
+		text-align: center;
+		padding: .8em 0;
+	}
+	.content-wrapper .product1 h3 .currency,
+	.content-wrapper .product2 h3 .currency,
+	.content-wrapper .product3 h3 .currency,
+	.content-wrapper .product4 h3 .currency,
+	.content-wrapper .product5 h3 .currency,
+	.content-wrapper .product6 h3 .currency,
+	.content-wrapper .product7 h3 .currency,
+	.content-wrapper .product8 h3 .currency,
+	.content-wrapper .product9 h3 .currency {
+		font-size: .35em;
+		text-transform: uppercase;
+	}
+	.content-wrapper .products-1,
+	.content-wrapper .products-2,
+	.content-wrapper .products-3,
+	.content-wrapper .products-4,
+	.content-wrapper .products-5,
+	.content-wrapper .products-6,
+	.content-wrapper .products-7,
+	.content-wrapper .products-8,
+	.content-wrapper .products-9 {
+		width: 30%;
+		padding-right: 2em;
+		justify-content: space-around;
+	}
+	.content-wrapper .products-img1,
+	.content-wrapper .products-img2,
+	.content-wrapper .products-img3,
+	.content-wrapper .products-img4,
+	.content-wrapper .products-img5,
+	.content-wrapper .products-img6,
+	.content-wrapper .products-img7,
+	.content-wrapper .products-img8,
+	.content-wrapper .products-img9 {
+		height: auto;
+	}
+	.products-hero {
+		background-image: url(../../dist/img/products-hero.jpg);
+	}
 }
 
 /* 4. Contact ================================= */
@@ -429,6 +678,109 @@ table {
 
 .contact-social li p:last-child {
 	margin-bottom: 2em;
+}
+
+@media screen and (min-width: 640px) {
+	.contact-hero {
+		background-image: url(../../dist/img/contact-hero.jpg);
+	}
+	.contact-info {
+		position: absolute;
+		top: 85%;
+		right: 45%;
+		background-color: orange;
+		padding: 1em;
+		font-family: "Raleway", sans-serif;
+		line-height: 1.5;
+		margin: 2em 0;
+		width: 50%;
+	}
+	.contact-info h1 {
+		font-family: "Oswald", sans-serif;
+		font-size: 3.5em;
+		text-align: center;
+		padding: .2em;
+	}
+	.contact-info p {
+		padding-bottom: 1em;
+	}
+	.contact-info :last-child {
+		padding-bottom: 1.4em;
+	}
+	.contact-aside {
+		background-color: lightseagreen;
+		padding: 1em;
+		font-family: "Raleway", sans-serif;
+		line-height: 1.5;
+		margin-bottom: 2em 0;
+		width: 35%;
+		position: absolute;
+		top: 90%;
+		left: 60%;
+	}
+	.contact-aside h2 {
+		font-family: "Oswald", sans-serif;
+		font-size: 3.5em;
+		padding: .2em;
+		padding-bottom: .4em;
+		text-align: center;
+	}
+	.contact-aside p {
+		padding-bottom: 1em;
+	}
+	.contact-aside :last-child {
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		color: black;
+	}
+	.contact-aside :last-child a {
+		padding-top: 1em;
+		text-align: center;
+		margin-bottom: 2em;
+		letter-spacing: .35em;
+		text-transform: uppercase;
+	}
+	.contact-aside :last-child a:hover {
+		color: firebrick;
+	}
+	.contact-social {
+		background-color: pink;
+		padding: 1em;
+		font-family: "Raleway", sans-serif;
+		line-height: 1.5;
+		margin: 2em 0;
+		width: 50%;
+		right: 45%;
+		top: 130%;
+		position: absolute;
+	}
+	.contact-social h3 {
+		font-family: "Oswald", sans-serif;
+		font-size: 3.5em;
+		padding: .2em;
+		text-align: center;
+		margin-bottom: .3em;
+	}
+	.contact-social li .social1,
+	.contact-social li .social2,
+	.contact-social li .social3 {
+		display: flex;
+	}
+	.contact-social li h4 {
+		font-style: italic;
+		position: relative;
+		top: 1em;
+		padding-left: 2em;
+	}
+	.contact-social li p {
+		padding-top: .7em;
+		text-align: left;
+		font-size: 1em;
+	}
+	.contact-social li p:last-child {
+		margin-bottom: 2em;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */

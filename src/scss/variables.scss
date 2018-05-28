@@ -17,7 +17,11 @@ $tritary-color: firebrick;
 
 @mixin product-mobile-styles{
     width: 100%;
-	height: 100%;
+    height: 100%;
+}
+@mixin product-tablet-styles{
+    // width: 33%;
+    height: auto;
 }
 
 @mixin tint{
@@ -49,35 +53,69 @@ $tritary-color: firebrick;
 
 @mixin gallery-info-styles{
     display: flex;
-				flex-direction: column;
-				h2{
-					font-family: $secondary-font;
-					font-size: 3.5em;
-					text-transform: uppercase;
+	flex-direction: column;
+    h2{
+        font-family: $secondary-font;
+        font-size: 3.5em;
+        text-transform: uppercase;
+        text-align: center;
 
-					margin: 1em;
-
-				}
-				p{
-					font-family: $secondary-font;
-					font-size: 1.2em;
-					text-align: center;
-					padding: 2em 0;
-					border-bottom: 1px solid black;
-					border-top: 1px solid black;
-
-				}
-				h3{
-					font-family: $secondary-font;
-					font-size: 2em;
-					text-align:center;
-					padding: 1em 0;
-					.currency{
-						font-size: .35em;
-						text-transform: uppercase;
-                    }
-                }
+        margin: 1em;
+    }
+    p{
+        font-family: $secondary-font;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 2em 0;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+    h3{
+        font-family: $secondary-font;
+        font-size: 2em;
+        text-align:center;
+        padding: 1em 0;
+            .currency{
+                font-size: .35em;
+                text-transform: uppercase;
+            }
+    }
 }
+
+@mixin gallery-info-styles-tablet{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    h2{
+        font-family: $secondary-font;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        text-align: center;
+        padding: .5em 0;
+
+        margin: .5em;
+    }
+    p{
+        font-family: $secondary-font;
+        font-size: .8em;
+        text-align: center;
+        padding: 1em 0;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+    h3{
+        font-family: $secondary-font;
+        font-size: 1.5em;
+        text-align:center;
+        padding: .8em 0;
+            .currency{
+                font-size: .35em;
+                text-transform: uppercase;
+            }
+    }
+}
+
 
 // /*VIEWPORTS*/
 // @mixin bp-mobile{
