@@ -5,10 +5,12 @@ $desktop-breakpoint: 940px;
 $primary-font: 'Righteous', cursive;
 $secondary-font: 'Raleway', sans-serif;
 $tritary-font: 'Oswald', sans-serif;
+$quadrary-font: 'Bowlby One SC', cursive;
 
 $primary-color: black;
 $secondary-color: red;
 $tritary-color: firebrick;
+$quadrary-color: white;
 
 @mixin centering-mobile{
     display: flex;

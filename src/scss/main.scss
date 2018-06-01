@@ -48,8 +48,20 @@ TABLE OF CONTENTS:
 	}
 }
 
+.hp-h1{
+	font-family: $quadrary-font;
+	font-size: 3.5em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1em;
+	margin-top: .5em;
+}
+
 // NAVIGATION
 .menu-item{
+	border: 1px solid $tritary-color;
+	margin-bottom: 1em;
+	border-radius: 1em;
 	a{
 		text-decoration: none;
 		text-transform: uppercase;
@@ -58,7 +70,7 @@ TABLE OF CONTENTS:
 		color: $primary-color;
 
 		&:hover{
-			color: $secondary-color;
+			color: $tritary-color;
 		}
 	}
 }
@@ -85,29 +97,41 @@ TABLE OF CONTENTS:
 .social{
 	cursor: pointer;
 	display:flex;
+	flex-direction: column;
 	justify-content: space-around;
-	margin-top: 4em;
+	margin-top: 1em;
 	margin-bottom: 2em;
 	font-family: $secondary-font;
 	font-size: 1em;
 	text-transform: uppercase;
+	
 
 	li{
+		padding: 1em 0;
+		text-align: center;
+		background-color: $tritary-color;
+		margin-bottom: 1em;
+		border-radius: 1.2em;
 		a{
 			width: 100%;
 			height: 100%;
 			padding: 2em 4em;
 			text-decoration: none;
 			color: $primary-color;
+			transition: all .1s ease-in-out;
 
 			&:hover{
-				color: $tritary-color;
+				color: $quadrary-color;
 			}
 		}	
 	}
 }
 
 @media screen and (min-width:$tablet-breakpoint){
+
+	.hp-h1{
+		order: -2;
+	}
 	.logo-container{
 		display:flex;
 		justify-content: center;
@@ -116,29 +140,89 @@ TABLE OF CONTENTS:
 			height: 50%;
 			width: 50%;
 			position: absolute;
-			top: 22%;
+			top: 28%;
 			right: 22%;
 		}
 	}
-	.about{
-		transform: rotate(90deg);
-		position: absolute;
-		right: 85%;
-		top: 40%;
+
+	.nav-container{
+		display: flex;
+		justify-content: space-around;
+		order:0;
+		margin-top: 50%;
+
+		.menu-item{
+			a{
+				font-size: 2em;
+			}
+		}
+
+		.about{
+			width: 30%;
+			border: none;
+		}
+		.products{
+			width: 30%;
+			border: none;
+		}
+		.contact{
+			width: 30%;
+			border: none;
+		}
 	}
-	.products{
-		position: absolute;
-		top: 80%;
-		right: 35%;
-	}
-	.contact{
-		transform: rotate(-90deg);
-		position: absolute;
-		left: 85%;
-		top: 40%;
-	}
+
 	.social{
-		margin-top: 2.5em;
+		margin-top: -1em;
+		flex-direction: row;
+		order: -1;
+		li{
+			background-color: transparent;
+			a{
+				&:hover{
+					background-color: $tritary-color;
+					border-radius: 2em;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width:$desktop-breakpoint){
+	.nav-container{
+		display: flex;
+		justify-content: space-around;
+		order:0;
+		margin-top: 50%;
+
+		.menu-item{
+			a{
+				font-size: 2em;
+				border-top: 1px dotted $tritary-color;
+				border-right: 1px dotted $tritary-color;
+				// background-color: pink;
+			}
+		}
+
+		.about{
+			border: none;
+			transform: rotate(90deg);
+			position: absolute;
+			right: 80%;
+			top: 45%;
+		}
+		.products{
+			border: none;
+			position: absolute;
+			top: 85%;
+			right: 35%;
+		}
+		.contact{
+			border: none;
+			transform: rotate(-90deg);
+			position: absolute;
+			left: 80%;
+			top: 45%;
+		}
 	}
 }
 
@@ -151,38 +235,51 @@ TABLE OF CONTENTS:
 		height: 10em;
 	}
 }
+.ACP{
+	display: flex;
+	justify-content: space-around;
+}
 .about-link-thumb{
-	@include centering-mobile
-	text-decoration: none;
-	text-transform: uppercase;
-	color: $primary-color;
-	font-family: $primary-font;
-	font-size: 1.5em;
-	background-color: $tritary-color;
-	margin: 1em 0;
-	padding: 1.5em;
+	// text-decoration: none;
+	// text-transform: uppercase;
+	// color: $primary-color;
+	// font-family: $primary-font;
+	// font-size: 1.5em;
+	// margin: 1em 0;
+	// padding: 1.5em;
+
+	img{
+		width: 30%;
+		height: auto;
+	}
 }
 .products-link-thumb{
-	@include centering-mobile
-	text-decoration: none;
-	text-transform: uppercase;
-	color: $primary-color;
-	font-family: $primary-font;
-	font-size: 1em;
-	background-color: $tritary-color;
-	margin: 1em 0;
-	padding: 1.5em;
+	// text-decoration: none;
+	// text-transform: uppercase;
+	// color: $primary-color;
+	// font-family: $primary-font;
+	// font-size: 1em;
+	// margin: 1em 0;
+	// padding: 1.5em;
+
+	img{
+		width: 30%;
+		height: auto;
+	}
 }
 .contact-link-thumb{
-	@include centering-mobile
-	text-decoration: none;
-	text-transform: uppercase;
-	color: $primary-color;
-	font-family: $primary-font;
-	font-size: .7em;
-	background-color: $tritary-color;
-	margin: 1em 0;
-	padding: 1.5em;
+	// text-decoration: none;
+	// text-transform: uppercase;
+	// color: $primary-color;
+	// font-family: $primary-font;
+	// font-size: .7em;
+	// margin: 1em 0;
+	// padding: 1.5em;
+
+	img{
+		width: 30%;
+		height: auto;
+	}
 }
 .left-imgs{
 	.about-img-1,
