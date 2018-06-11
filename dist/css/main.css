@@ -395,7 +395,7 @@ table {
 	}
 	.hero {
 		height: 500px;
-		background-size: auto 600px;
+		background-size: auto 700px;
 	}
 	.ACP li a img {
 		width: 35%;
@@ -604,117 +604,15 @@ table {
 }
 
 @media screen and (min-width: 640px) {
-	.content-wrapper {
-		flex-direction: row;
-		flex-wrap: wrap;
+	.hero {
+		height: 500px;
+		background-size: auto 500px;
 	}
-	.content-wrapper .product1,
-	.content-wrapper .product2,
-	.content-wrapper .product3,
-	.content-wrapper .product4,
-	.content-wrapper .product5,
-	.content-wrapper .product6,
-	.content-wrapper .product7,
-	.content-wrapper .product8,
-	.content-wrapper .product9 {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.content-wrapper .product1 h2,
-	.content-wrapper .product2 h2,
-	.content-wrapper .product3 h2,
-	.content-wrapper .product4 h2,
-	.content-wrapper .product5 h2,
-	.content-wrapper .product6 h2,
-	.content-wrapper .product7 h2,
-	.content-wrapper .product8 h2,
-	.content-wrapper .product9 h2 {
-		font-family: "Raleway", sans-serif;
-		font-size: 1.5em;
-		text-transform: uppercase;
-		text-align: center;
-		padding: .5em 0;
-		margin: .5em;
-	}
-	.content-wrapper .product1 p,
-	.content-wrapper .product2 p,
-	.content-wrapper .product3 p,
-	.content-wrapper .product4 p,
-	.content-wrapper .product5 p,
-	.content-wrapper .product6 p,
-	.content-wrapper .product7 p,
-	.content-wrapper .product8 p,
-	.content-wrapper .product9 p {
-		font-family: "Raleway", sans-serif;
-		font-size: .8em;
-		text-align: center;
-		padding: 1em 0;
-		border-bottom: 1px solid black;
-		border-top: 1px solid black;
-	}
-	.content-wrapper .product1 h3,
-	.content-wrapper .product2 h3,
-	.content-wrapper .product3 h3,
-	.content-wrapper .product4 h3,
-	.content-wrapper .product5 h3,
-	.content-wrapper .product6 h3,
-	.content-wrapper .product7 h3,
-	.content-wrapper .product8 h3,
-	.content-wrapper .product9 h3 {
-		font-family: "Raleway", sans-serif;
-		font-size: 1.5em;
-		text-align: center;
-		padding: .8em 0;
-	}
-	.content-wrapper .product1 h3 .currency,
-	.content-wrapper .product2 h3 .currency,
-	.content-wrapper .product3 h3 .currency,
-	.content-wrapper .product4 h3 .currency,
-	.content-wrapper .product5 h3 .currency,
-	.content-wrapper .product6 h3 .currency,
-	.content-wrapper .product7 h3 .currency,
-	.content-wrapper .product8 h3 .currency,
-	.content-wrapper .product9 h3 .currency {
-		font-size: .35em;
-		text-transform: uppercase;
-	}
-	.content-wrapper .products-1,
-	.content-wrapper .products-2,
-	.content-wrapper .products-3,
-	.content-wrapper .products-4,
-	.content-wrapper .products-5,
-	.content-wrapper .products-6,
-	.content-wrapper .products-7,
-	.content-wrapper .products-8,
-	.content-wrapper .products-9 {
-		width: 30%;
-		padding-right: 2em;
-		justify-content: space-around;
-	}
-	.content-wrapper .products-img1,
-	.content-wrapper .products-img2,
-	.content-wrapper .products-img3,
-	.content-wrapper .products-img4,
-	.content-wrapper .products-img5,
-	.content-wrapper .products-img6,
-	.content-wrapper .products-img7,
-	.content-wrapper .products-img8,
-	.content-wrapper .products-img9 {
-		height: auto;
-	}
-	.products-hero {
-		background-image: url(../../dist/img/products-hero.jpg);
-	}
-}
-
-@media screen and (min-width: 940px) {
 	.products {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(4, 1fr);
-		grid-auto-rows: 50px, auto;
-		grid-auto-flow: dense;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	.products .product1,
 	.products .product2,
@@ -725,8 +623,120 @@ table {
 	.products .product7,
 	.products .product8,
 	.products .product9 {
-		width: 100%;
-		height: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.products .product1 h2,
+	.products .product2 h2,
+	.products .product3 h2,
+	.products .product4 h2,
+	.products .product5 h2,
+	.products .product6 h2,
+	.products .product7 h2,
+	.products .product8 h2,
+	.products .product9 h2 {
+		font-family: "Raleway", sans-serif;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		text-align: center;
+		padding: .5em 0;
+		margin: .5em;
+	}
+	.products .product1 p,
+	.products .product2 p,
+	.products .product3 p,
+	.products .product4 p,
+	.products .product5 p,
+	.products .product6 p,
+	.products .product7 p,
+	.products .product8 p,
+	.products .product9 p {
+		font-family: "Raleway", sans-serif;
+		font-size: .8em;
+		text-align: center;
+		padding: 1em 0;
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
+	}
+	.products .product1 h3,
+	.products .product2 h3,
+	.products .product3 h3,
+	.products .product4 h3,
+	.products .product5 h3,
+	.products .product6 h3,
+	.products .product7 h3,
+	.products .product8 h3,
+	.products .product9 h3 {
+		font-family: "Raleway", sans-serif;
+		font-size: 1.5em;
+		text-align: center;
+		padding: .8em 0;
+	}
+	.products .product1 h3 .currency,
+	.products .product2 h3 .currency,
+	.products .product3 h3 .currency,
+	.products .product4 h3 .currency,
+	.products .product5 h3 .currency,
+	.products .product6 h3 .currency,
+	.products .product7 h3 .currency,
+	.products .product8 h3 .currency,
+	.products .product9 h3 .currency {
+		font-size: .35em;
+		text-transform: uppercase;
+	}
+	.products .products-1,
+	.products .products-2,
+	.products .products-3,
+	.products .products-4,
+	.products .products-5,
+	.products .products-6,
+	.products .products-7,
+	.products .products-8,
+	.products .products-9 {
+		width: 30%;
+		padding-right: 2em;
+		justify-content: space-around;
+	}
+	.products .products-img1,
+	.products .products-img2,
+	.products .products-img3,
+	.products .products-img4,
+	.products .products-img5,
+	.products .products-img6,
+	.products .products-img7,
+	.products .products-img8,
+	.products .products-img9 {
+		height: auto;
+	}
+	.products-hero {
+		background-image: url(../../dist/img/products-hero.jpg);
+	}
+}
+
+@media screen and (min-width: 940px) {
+	.hero {
+		height: 500px;
+		background-size: auto 700px;
+	}
+	.products {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.products .products-1,
+	.products .products-2,
+	.products .products-3,
+	.products .products-4,
+	.products .products-5,
+	.products .products-6,
+	.products .products-7,
+	.products .products-8,
+	.products .products-9 {
+		width: 20%;
+		padding-right: 2em;
+		justify-content: space-around;
 	}
 	.products .products-img1,
 	.products .products-img2,
@@ -740,84 +750,28 @@ table {
 		width: 100%;
 		height: auto;
 	}
-	.products .products-1 {
-		width: 100%;
-		grid-column: 1/2;
-		grid-row: 1/3;
-	}
-	.products .products-2 {
-		width: 100%;
-		grid-column: 1/2;
-		grid-row: 3/5;
-	}
-	.products .products-2 .gallery-info2 {
-		display: none;
-	}
-	.products .products-3 {
-		width: 100%;
-		grid-column: 2/3;
-		grid-row: 1/2;
-	}
-	.products .products-3 .gallery-info3 {
-		display: none;
-	}
-	.products .products-4 {
-		width: 100%;
-		grid-column: 2/3;
-		grid-row: 2/3;
-	}
-	.products .products-4 .gallery-info4 {
-		display: none;
-	}
-	.products .products-5 {
-		width: 100%;
-		grid-column: 2/3;
-		grid-row: 3/4;
-	}
-	.products .products-5 .gallery-info5 {
-		display: none;
-	}
-	.products .products-6 {
-		width: 100%;
-		grid-column: 3/4;
-		grid-row: 1/3;
-	}
-	.products .products-6 .gallery-info6 {
-		display: none;
-	}
-	.products .products-7 {
-		width: 100%;
-		grid-column: 4/5;
-		grid-row: 1/3;
-	}
-	.products .products-7 .gallery-info7 {
-		display: none;
-	}
-	.products .products-8 {
-		width: 100%;
-		grid-column: 3/5;
-		grid-row: 3/4;
-	}
-	.products .products-8 .gallery-info8 {
-		display: none;
-	}
-	.products .products-9 {
-		width: 100%;
-		grid-column: 2/5;
-		grid-row: 4/5;
-	}
-	.products .products-9 .gallery-info9 {
-		display: none;
-	}
 }
 
 /* 4. Contact ================================= */
+.contact-hero {
+	background-image: url(../../dist/img/contact-hero.jpg);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 2em;
+	position: relative;
+	top: -15em;
+}
+
 .contact-info {
 	background-color: orange;
 	padding: 1em;
 	font-family: "Raleway", sans-serif;
 	line-height: 1.5;
-	margin: 2em 0;
+	border-radius: 2em;
 }
 
 .contact-info h1 {
@@ -840,7 +794,7 @@ table {
 	padding: 1em;
 	font-family: "Raleway", sans-serif;
 	line-height: 1.5;
-	margin-bottom: 2em 0;
+	border-radius: 2em;
 }
 
 .contact-aside h2 {
@@ -879,7 +833,7 @@ table {
 	padding: 1em;
 	font-family: "Raleway", sans-serif;
 	line-height: 1.5;
-	margin: 2em 0;
+	border-radius: 2em;
 }
 
 .contact-social h3 {
@@ -914,19 +868,28 @@ table {
 }
 
 @media screen and (min-width: 640px) {
+	.hero {
+		height: 500px;
+		background-size: auto 500px;
+	}
 	.contact-hero {
 		background-image: url(../../dist/img/contact-hero.jpg);
 	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 1em;
+		position: relative;
+		top: -5em;
+	}
 	.contact-info {
-		position: absolute;
-		top: 85%;
-		right: 45%;
 		background-color: orange;
 		padding: 1em;
 		font-family: "Raleway", sans-serif;
 		line-height: 1.5;
-		margin: 2em 0;
-		width: 50%;
+		width: 100%;
+		border-radius: 2em;
 	}
 	.contact-info h1 {
 		font-family: "Oswald", sans-serif;
@@ -946,10 +909,8 @@ table {
 		font-family: "Raleway", sans-serif;
 		line-height: 1.5;
 		margin-bottom: 2em 0;
-		width: 35%;
-		position: absolute;
-		top: 90%;
-		left: 60%;
+		width: 100%;
+		border-radius: 2em;
 	}
 	.contact-aside h2 {
 		font-family: "Oswald", sans-serif;
@@ -983,10 +944,9 @@ table {
 		font-family: "Raleway", sans-serif;
 		line-height: 1.5;
 		margin: 2em 0;
-		width: 50%;
-		right: 45%;
-		top: 130%;
-		position: absolute;
+		width: 100%;
+		grid-column: 1/4;
+		border-radius: 2em;
 	}
 	.contact-social h3 {
 		font-family: "Oswald", sans-serif;
@@ -1013,6 +973,47 @@ table {
 	}
 	.contact-social li p:last-child {
 		margin-bottom: 2em;
+	}
+}
+
+@media screen and (min-width: 940px) {
+	.hero {
+		height: 500px;
+		background-size: auto 700px;
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 1em;
+		position: relative;
+		top: -5em;
+	}
+	.contact-info {
+		background-color: orange;
+		padding: 1em;
+		font-family: "Raleway", sans-serif;
+		line-height: 1.5;
+		width: 100%;
+		border-radius: 2em;
+	}
+	.contact-aside {
+		background-color: lightseagreen;
+		padding: 1em;
+		font-family: "Raleway", sans-serif;
+		line-height: 1.5;
+		width: 100%;
+		border-radius: 2em;
+	}
+	.contact-social {
+		background-color: pink;
+		padding: 1em;
+		font-family: "Raleway", sans-serif;
+		line-height: 1.5;
+		width: 100%;
+		border-radius: 2em;
+		grid-column: 3/4;
+		margin-top: 0;
 	}
 }
 
